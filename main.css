@@ -1,0 +1,158 @@
+#topbar {
+  background-color: black;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  height: 130px;
+  margin: 0;
+}
+
+.logo {
+  display: flex;
+  width: 15%;
+}
+
+.logo img {
+  display: flex;
+  height: 100px;
+}
+
+.title {
+  text-align: center;
+  color: goldenrod;
+  display: block;
+}
+
+nav {
+  flex: 1;
+  text-align: right;
+}
+nav ul {
+  display: inline-block;
+  list-style-type: none;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+.container {
+  margin: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  color: goldenrod;
+  text-align: center;
+}
+
+.sm {
+  float: right;
+  padding: 10px;
+  margin: auto;
+  display: block;
+}
+
+.sm a {
+  text-decoration: none;
+  font-size: 20px;
+  color: goldenrod;
+}
+
+a {
+  text-decoration: none;
+  font-size: 20px;
+  color: goldenrod;
+}
+
+#box {
+  width: 70%;
+  height: 15%;
+  background-color: goldenrod;
+  color: black;
+  opacity: 70%;
+  position: relative;
+  top: 150px;
+  border-style: double;
+  padding-top: 20px;
+  margin: auto;
+  text-align: center;
+  display: block;
+}
+
+#menu {
+  width: 80%;
+  display: block;
+  background-color: goldenrod;
+  position: relative;
+  top: 100px;
+  border-style: double;
+  margin: auto;
+  text-align: center;
+  z-index: 1;
+}
+
+.menu-img {
+  width: 100%;
+  opacity: 100%;
+  display: block;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.column {
+  flex: 24%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.story-image {
+  width: 80%;
+  margin: auto;
+  padding: 50px;
+  display: block;
+}
+
+.story-img {
+  width: 100%;
+  display: block;
+}
+
+.story {
+  background-color: goldenrod;
+  opacity: 70%;
+  width: 70%;
+  padding: 50px;
+  border-style: double;
+  margin-top: 50px;
+  margin: auto;
+  display: block;
+}
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+  .logo img {
+    display: flex;
+    height: 50px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+  .logo img {
+    display: flex;
+    height: 50px;
+  }
+}
